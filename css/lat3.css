@@ -1,0 +1,20 @@
+body {
+  background-color: lightblue;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  color: lightyellow;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+ul {
+  border: 2px solid black;
+  padding: 18px;
+  width: 200px;
+}
