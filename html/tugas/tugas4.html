@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pengisian Biodata Dosen</title>
+  </head>
+  <!-- Wilma Auraruna Khalif -->
+  <!-- A11.2024.15841 -->
+  <body>
+    <header>
+      <h1 align="center">Form Pengisian Biodata Dosen</h1>
+    </header>
+    <div class="container">
+      <!-- Detail Dosen -->
+      <div class="detailDosen">
+        <h2 align="center">Detail Dosen</h2>
+        <form>
+          <table align="center" cellpadding="5">
+            <tr>
+              <td rowspan="8">
+                <img
+                  src="/img/pakNaufal.jpg"
+                  alt="pak Naufal"
+                  style="width: 200px"
+                />
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <label for="nama">Nama</label>
+              </td>
+              <td>
+                <input type="text" id="nama" name="nama" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="NIDN">NIDN</label>
+              </td>
+              <td><input type="number" id="NIDN" name="NIDN" /></td>
+            </tr>
+            <tr>
+              <td>
+                <label for="NPP">NPP</label>
+              </td>
+              <td><input type="text" id="NPP" name="NPP" /> <br /></td>
+            </tr>
+            <tr>
+              <td>
+                <label for="h_base">Home Base</label>
+              </td>
+              <td><input type="text" id="h_base" name="h_base" /> <br /></td>
+            </tr>
+            <tr>
+              <td>
+                <label for="jabatan">Jabatan Fungsional</label>
+              </td>
+              <td><input type="text" id="jabatan" name="jabatan" /> <br /></td>
+            </tr>
+            <tr>
+              <td>
+                <label for="golongan">Golongan</label>
+              </td>
+              <td>
+                <input type="text" id="golongan" name="golongan" /> <br />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="email">Email</label>
+              </td>
+              <td><input type="email" id="email" name="email" /> <br /></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <!-- Jadwal Mengajar -->
+      <div class="jadwal">
+        <h2 align="center">Form Jadwal Mengajar Dosen</h2>
+        <form>
+          <table border="1" cellpadding="5" cellspacing="0" align="center">
+            <tr>
+              <td>No</td>
+              <td>Mata Kuliah</td>
+              <td>Kelompok</td>
+              <td>SKS</td>
+              <td colspan="3">Jadwal 1</td>
+              <td colspan="3">Jadwal 2</td>
+              <td colspan="3">Jadwal 3</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>Hari</td>
+              <td>Jam</td>
+              <td>Ruang</td>
+              <td>Hari</td>
+              <td>Jam</td>
+              <td>Ruang</td>
+              <td>Hari</td>
+              <td>Jam</td>
+              <td>Ruang</td>
+            </tr>
+            <!-- Baris 1 -->
+            <tr>
+              <td>1</td>
+              <td>
+                <input
+                  type="text"
+                  name="matkul1"
+                  placeholder="A11.64103 - DASAR PEMROGRAMAN"
+                />
+              </td>
+              <td>
+                <input type="text" name="kelompok1" placeholder="A11.4109" />
+              </td>
+              <td><input type="number" name="sks1" /></td>
+              <td>
+                <select name="hari1_1">
+                  <option>Senin</option>
+                  <option>Selasa</option>
+                  <option>Rabu</option>
+                  <option>Kamis</option>
+                  <option>Jumat</option>
+                </select>
+              </td>
+              <td>
+                <input type="text" name="jam1_1" placeholder="07.00-08.40" />
+              </td>
+              <td><input type="text" name="ruang1_1" placeholder="D.3.N" /></td>
+              <td>
+                <select name="hari1_2">
+                  <option>Senin</option>
+                  <option>Selasa</option>
+                  <option>Rabu</option>
+                  <option>Kamis</option>
+                  <option>Jumat</option>
+                </select>
+              </td>
+              <td>
+                <input type="text" name="jam1_2" placeholder="08.40-10.20" />
+              </td>
+              <td>
+                <input type="text" name="ruang1_2" placeholder="H.5.10" />
+              </td>
+              <td><input type="text" name="hari1_3" /></td>
+              <td><input type="text" name="jam1_3" /></td>
+              <td><input type="text" name="ruang1_3" /></td>
+            </tr>
+            <!-- Baris 2 -->
+            <tr>
+              <td>2</td>
+              <td>
+                <input
+                  type="text"
+                  name="matkul2"
+                  placeholder="A11.64606 - KOMPUTER GRAFIK"
+                />
+              </td>
+              <td>
+                <input type="text" name="kelompok2" placeholder="A11.4703" />
+              </td>
+              <td><input type="number" name="sks2" /></td>
+              <td>
+                <select name="hari2_1">
+                  <option>Senin</option>
+                  <option>Selasa</option>
+                  <option>Rabu</option>
+                  <option>Kamis</option>
+                  <option>Jumat</option>
+                </select>
+              </td>
+              <td>
+                <input type="text" name="jam2_1" placeholder="12.30-15.00" />
+              </td>
+              <td><input type="text" name="ruang2_1" placeholder="H.3.1" /></td>
+              <td>
+                <select name="hari2_2">
+                  <option>Senin</option>
+                  <option>Selasa</option>
+                  <option>Rabu</option>
+                  <option>Kamis</option>
+                  <option>Jumat</option>
+                </select>
+              </td>
+              <td><input type="text" name="jam2_2" /></td>
+              <td><input type="text" name="ruang2_2" /></td>
+              <td><input type="text" name="hari2_3" /></td>
+              <td><input type="text" name="jam2_3" /></td>
+              <td><input type="text" name="ruang2_3" /></td>
+            </tr>
+            <!-- Baris 3 -->
+            <tr>
+              <td>3</td>
+              <td>
+                <input
+                  type="text"
+                  name="matkul1"
+                  placeholder="A11.64103 - DASAR PEMROGRAMAN"
+                />
+              </td>
+              <td>
+                <input type="text" name="kelompok1" placeholder="A11.4109" />
+              </td>
+              <td><input type="number" name="sks3" /></td>
+              <td>
+                <select name="hari3_1">
+                  <option>Senin</option>
+                  <option>Selasa</option>
+                  <option>Rabu</option>
+                  <option>Kamis</option>
+                  <option>Jumat</option>
+                </select>
+              </td>
+              <td>
+                <input type="text" name="jam3_1" placeholder="07.00-08.40" />
+              </td>
+              <td><input type="text" name="ruang3_1" placeholder="D.3.N" /></td>
+              <td>
+                <select name="hari3_2">
+                  <option>Senin</option>
+                  <option>Selasa</option>
+                  <option>Rabu</option>
+                  <option>Kamis</option>
+                  <option>Jumat</option>
+                </select>
+              </td>
+              <td>
+                <input type="text" name="jam3_2" placeholder="08.40-10.20" />
+              </td>
+              <td>
+                <input type="text" name="ruang3_2" placeholder="H.5.10" />
+              </td>
+              <td><input type="text" name="hari3_3" /></td>
+              <td><input type="text" name="jam3_3" /></td>
+              <td><input type="text" name="ruang3_3" /></td>
+            </tr>
+            <!-- Baris 4 -->
+            <tr>
+              <td>4</td>
+              <td>
+                <input
+                  type="text"
+                  name="matkul1"
+                  placeholder="A11.64103 - DASAR PEMROGRAMAN"
+                />
+              </td>
+              <td>
+                <input type="text" name="kelompok1" placeholder="A11.4109" />
+              </td>
+              <td><input type="number" name="sks4" /></td>
+              <td>
+                <select name="hari4_1">
+                  <option>Senin</option>
+                  <option>Selasa</option>
+                  <option>Rabu</option>
+                  <option>Kamis</option>
+                  <option>Jumat</option>
+                </select>
+              </td>
+              <td>
+                <input type="text" name="jam1_1" placeholder="07.00-08.40" />
+              </td>
+              <td><input type="text" name="ruang1_1" placeholder="D.3.N" /></td>
+              <td>
+                <select name="hari1_2">
+                  <option>Senin</option>
+                  <option>Selasa</option>
+                  <option>Rabu</option>
+                  <option>Kamis</option>
+                  <option>Jumat</option>
+                </select>
+              </td>
+              <td>
+                <input type="text" name="jam1_2" placeholder="08.40-10.20" />
+              </td>
+              <td>
+                <input type="text" name="ruang1_2" placeholder="H.5.10" />
+              </td>
+              <td><input type="text" name="hari1_3" /></td>
+              <td><input type="text" name="jam1_3" /></td>
+              <td><input type="text" name="ruang1_3" /></td>
+            </tr>
+          </table>
+          <br />
+          <div align="center">
+            <button type="submit">Simpan Data</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
