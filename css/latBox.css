@@ -1,0 +1,22 @@
+.container {
+  margin: 50 px;
+}
+
+.top-box {
+  margin-left: 300px;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  border-radius: 5px;
+  margin: 20px;
+  text-align: center;
+}
+
+.bot-box {
+  width: 300px;
+  border: 15px solid green;
+  border-radius: 5px;
+  padding: 50px;
+  margin: 20px;
+  text-align: center;
+}

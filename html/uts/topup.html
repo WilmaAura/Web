@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top Up</title>
+    <link rel="stylesheet" href="/html/uts/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      xintegrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">GameStore</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/html/uts/index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                aria-current="page"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Games
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">MOBA Games</a></li>
+                <li><a class="dropdown-item" href="#">Battle Royale</a></li>
+                <li><a class="dropdown-item" href="#">RPG Games</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Promo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tutorial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex me-lg-3 my-2 my-lg-0" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search game..."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+          <div class="d-flex gap-2 my-2 my-lg-0">
+            <button class="btn btn-outline-light">Login</button>
+            <button class="btn btn-primary">Register</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container py-5">
+      <h1 class="mb-4 text-center fw-bold">Top Up Diamond Mobile Legends</h1>
+
+      <div class="row justify-content-center mb-5 progress-indicator">
+        <div class="col-md-8 col-lg-6">
+          <ul class="list-group list-group-horizontal text-center shadow-sm">
+            <li class="list-group-item active w-100">1. Pilih Game</li>
+            <li class="list-group-item active w-100">2. Isi Data</li>
+            <li class="list-group-item w-100">3. Bayar</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <div class="card shadow-sm p-4">
+            <h4 class="card-title mb-4">Lengkapi Data Pemesanan</h4>
+            <form id="topupForm">
+              <div class="row mb-3">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label for="userId" class="form-label"
+                    >User ID <span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="userId"
+                    placeholder="Contoh: 12345678"
+                    required
+                  />
+                  <div class="form-text">Masukkan ID Game Anda.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="server" class="form-label"
+                    >Server <span class="text-danger">*</span></label
+                  >
+                  <select class="form-select" id="server" required>
+                    <option value="" disabled selected>Pilih Server</option>
+                    <option value="ID">Indonesia (ID)</option>
+                    <option value="SG">Singapura (SG)</option>
+                    <option value="MY">Malaysia (MY)</option>
+                    <option value="PH">Filipina (PH)</option>
+                    <option value="TH">Thailand (TH)</option>
+                  </select>
+                  <div class="form-text">Pilih server game Anda.</div>
+                </div>
+              </div>
+
+              <h5 class="mt-4 mb-3">
+                2. Pilih Nominal Diamond <span class="text-danger">*</span>
+              </h5>
+              <div class="row g-2 mb-3">
+                <div class="col-6 col-md-4">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="diamondNominal"
+                    id="nominal1"
+                    value="86"
+                    data-price="20000"
+                    required
+                  />
+                  <label class="btn btn-outline-primary w-100" for="nominal1"
+                    >86 Diamond - Rp 20.000</label
+                  >
+                </div>
+                <div class="col-6 col-md-4">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="diamondNominal"
+                    id="nominal2"
+                    value="172"
+                    data-price="40000"
+                  />
+                  <label class="btn btn-outline-primary w-100" for="nominal2"
+                    >172 Diamond - Rp 40.000</label
+                  >
+                </div>
+                <div class="col-6 col-md-4">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="diamondNominal"
+                    id="nominal3"
+                    value="257"
+                    data-price="60000"
+                  />
+                  <label class="btn btn-outline-primary w-100" for="nominal3"
+                    >257 Diamond - Rp 60.000</label
+                  >
+                </div>
+                <div class="col-6 col-md-4">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="diamondNominal"
+                    id="nominal4"
+                    value="344"
+                    data-price="80000"
+                  />
+                  <label class="btn btn-outline-primary w-100" for="nominal4"
+                    >344 Diamond - Rp 80.000</label
+                  >
+                </div>
+                <div class="col-6 col-md-4">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="diamondNominal"
+                    id="nominal5"
+                    value="429"
+                    data-price="100000"
+                  />
+                  <label class="btn btn-outline-primary w-100" for="nominal5"
+                    >429 Diamond - Rp 100.000</label
+                  >
+                </div>
+              </div>
+
+              <h5 class="mt-4 mb-3">
+                3. Pilih Metode Pembayaran <span class="text-danger">*</span>
+              </h5>
+              <select class="form-select mb-3" id="paymentMethod" required>
+                <option value="" disabled selected>
+                  Pilih Metode Pembayaran
+                </option>
+                <option value="DANA">DANA</option>
+                <option value="OVO">OVO</option>
+                <option value="GOPAY">GoPay</option>
+                <option value="QRIS">QRIS</option>
+                <option value="Transfer">Transfer Bank</option>
+              </select>
+              <div class="form-text">
+                Pilih metode pembayaran yang akan Anda gunakan.
+              </div>
+
+              <h5 class="mt-4 mb-3">4. Data Kontak</h5>
+              <div class="row mb-3">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label for="email" class="form-label"
+                    >Email (untuk konfirmasi)
+                    <span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="email@contoh.com"
+                    required
+                  />
+                  <div class="form-text">
+                    Email yang valid diperlukan untuk notifikasi.
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="whatsapp" class="form-label"
+                    >No. WhatsApp <span class="text-danger">*</span></label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="whatsapp"
+                    placeholder="Contoh: 081234567890"
+                    required
+                    pattern="^\+?\d{8,15}$"
+                  />
+                  <div class="form-text">
+                    Nomor WA yang aktif untuk bantuan cepat.
+                  </div>
+                </div>
+              </div>
+
+              <h5 class="mt-4 mb-3">5. Catatan (Opsional)</h5>
+              <div class="mb-3">
+                <textarea
+                  class="form-control"
+                  id="notes"
+                  rows="3"
+                  placeholder="Contoh: Tolong proses cepat"
+                ></textarea>
+              </div>
+
+              <div class="form-check mb-4">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="terms"
+                  required
+                />
+                <label class="form-check-label" for="terms">
+                  Saya menyetujui <a href="#">syarat & ketentuan</a> yang
+                  berlaku. <span class="text-danger">*</span>
+                </label>
+              </div>
+
+              <button class="btn btn-primary btn-lg w-100" type="submit">
+                Lanjut ke Pembayaran
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="order-summary shadow-sm">
+            <h4 class="mb-4 fw-bold">Ringkasan Pesanan</h4>
+            <div class="d-flex justify-content-between mb-2">
+              <span>Game:</span>
+              <span class="fw-bold">Mobile Legends</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span>User ID:</span>
+              <span class="fw-bold text-muted"
+                >Akan diisi setelah pembayaran</span
+              >
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span>Server:</span>
+              <span class="fw-bold text-muted">Belum dipilih</span>
+            </div>
+            <hr />
+            <div class="d-flex justify-content-between mb-2">
+              <span>Nominal:</span>
+              <span class="fw-bold text-primary">Contoh: 86 Diamond</span>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+              <span>Metode Pembayaran:</span>
+              <span class="fw-bold text-muted">Belum dipilih</span>
+            </div>
+            <hr class="mt-3 mb-3" />
+            <div class="d-flex justify-content-between">
+              <h5 class="mb-0">Total Harga:</h5>
+              <h5 class="mb-0 text-danger fw-bold">Rp 20.000 (Contoh)</h5>
+            </div>
+            <div class="mt-3">
+              <small class="text-muted"
+                >Ringkasan ini akan diperbarui setelah Anda menekan tombol
+                "Lanjut ke Pembayaran".</small
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p class="mb-1">© Contact: 089512060990</p>
+        <p class="mb-1">© Social media: wilmaark</p>
+        <p class="mb-0">© Copyright GameStore Wimdut Basudarah</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      xintegrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

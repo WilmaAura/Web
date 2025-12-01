@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameStore</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <style>
+      .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+          url("https://images.unsplash.com/photo-1606112219348-204d7d8b94ee")
+            center/cover no-repeat;
+        color: white;
+        text-align: center;
+        padding: 100px 20px;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        padding: 2rem;
+      }
+
+      .card {
+        background: #222;
+        color: white;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+        background: #343a40;
+      }
+
+      footer {
+        background-color: #212529;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+        margin-top: 2rem;
+      }
+
+      .breadcrumb {
+        background: #f8f9fa;
+        margin: 0;
+        padding: 1rem 2rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navbar Sticky -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">GameStore</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+
+            <!-- Dropdown Games -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Games
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Mobile Legends</a></li>
+                <li><a class="dropdown-item" href="#">PUBG Mobile</a></li>
+                <li><a class="dropdown-item" href="#">Genshin Impact</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Promo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tutorial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+
+          <!-- Search Box -->
+          <form class="d-flex me-3" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Cari game..."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+
+          <!-- Login & Registrasi Buttons -->
+          <div class="d-flex gap-2">
+            <button class="btn btn-outline-light">Login</button>
+            <button class="btn btn-primary">Register</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Breadcrumb (contoh untuk halaman detail game) -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Games</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          Mobile Legends
+        </li>
+      </ol>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1 class="display-4 fw-bold">Game Store Wimdut Basudarah</h1>
+      <p class="lead">Game Store yang murah dan terjamin.</p>
+      <!-- Button -->
+      <a href="#" class="btn btn-primary btn-lg mt-3">Lihat Koleksi Game</a>
+    </section>
+
+    <!-- Cards -->
+    <div class="cards container">
+      <div class="card">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/3/3d/Mobile_Legends_Bang_Bang_logo.png"
+          class="img-fluid mb-2"
+          alt="ml"
+        />
+        <h5>Mobile Legends</h5>
+      </div>
+      <div class="card">
+        <img
+          src="https://seeklogo.com/images/F/free-fire-logo-A10E3A6D20-seeklogo.com.png"
+          class="img-fluid mb-2"
+          alt="ff"
+        />
+        <h5>Free Fire</h5>
+      </div>
+      <div class="card">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/2/24/PlayerUnknown%27s_Battlegrounds_Mobile_logo.png"
+          class="img-fluid mb-2"
+          alt="pubg"
+        />
+        <h5>PUBG Mobile</h5>
+      </div>
+      <div class="card">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/1/15/Honor_of_Kings_logo.png"
+          class="img-fluid mb-2"
+          alt="hok"
+        />
+        <h5>Honor Of Kings</h5>
+      </div>
+      <div class="card">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/f/f7/Valorant_cover_art.jpg"
+          class="img-fluid mb-2"
+          alt="valo"
+        />
+        <h5>Valorant</h5>
+      </div>
+      <div class="card">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/6/6a/Genshin_Impact_logo.svg"
+          class="img-fluid mb-2"
+          alt="genshin"
+        />
+        <h5>Genshin Impact</h5>
+      </div>
+      <div class="card">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/8/8b/Wuthering_Waves_logo.png"
+          class="img-fluid mb-2"
+          alt="ww"
+        />
+        <h5>Wuthering Waves</h5>
+      </div>
+      <div class="card">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/en/6/6a/Call_of_Duty_Mobile_logo.png"
+          class="img-fluid mb-2"
+          alt="cod"
+        />
+        <h5>Call Of Duty Mobile</h5>
+      </div>
+    </div>
+
+    <footer>
+      <p class="mb-0">© 2025 Game Store Wimdut Basudarah</p>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

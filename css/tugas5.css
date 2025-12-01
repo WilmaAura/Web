@@ -1,0 +1,49 @@
+body {
+  background-color: #f4f6fa;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.judul {
+  text-align: center;
+  color: #0056b3;
+  margin-top: 40px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px 80px;
+}
+
+.box {
+  background-color: #fff;
+  width: 250px;
+  height: 200px;
+  border-radius: 15px;
+
+  padding: 20px;
+  border: 2px solid #e0e0e0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+
+  text-align: center;
+  transition: 0.3s;
+}
+
+.box:hover {
+  border-color: #0099ff;
+}
+
+.box h3 {
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+.box p {
+  color: #333;
+  font-size: 14px;
+}

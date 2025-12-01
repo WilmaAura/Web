@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luas Persegi Panjang</title>
+  </head>
+  <body>
+    <h1 style="text-align: center">Luas Persegi Panjang</h1>
+    <p>Masukkan Panjang:</p>
+    <input type="number" />
+    <p>Masukkan Lebar :</p>
+    <input type="number" /> <br />
+    <br />
+    <button onclick="luasPersegiPanjang()">Cari Luas</button>
+    <h3>Hasil: <span id="hasil"></span></h3>
+    <script>
+      function luasPersegiPanjang() {
+        let luas = p * l;
+        document.getElementById("hasil").value = luas;
+      }
+    </script>
+  </body>
+</html>

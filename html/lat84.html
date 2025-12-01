@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <td>NIM</td>
+          <td>Nama</td>
+        </tr>
+      </thead>
+      <tbody id="isi-woi"></tbody>
+    </table>
+    <script>
+      // JSON = object dan array
+
+      // 1 object
+      const mhs = {
+        name: "Wilma",
+        nim: "A11.2024.15841",
+      };
+
+      const listMhs = [
+        {
+          nama: "Wilma",
+          nim: "15841",
+        },
+        {
+          nama: "Auraruna",
+          nim: "15842",
+        },
+        {
+          nama: "Khalif",
+          nim: "15843",
+        },
+        {
+          nama: "Hana",
+          nim: "15844",
+        },
+      ];
+      console.log("List Mahasiswa: ", listMhs);
+      function renderTable() {
+        let tabel = document.getElementById("isi-woi");
+        tbody.innerHTML = ""; //Kosongkan dulu
+
+        listMhs.forEach(function (item) {
+          let baris = `
+            <tr> 
+              <td>$(item.nim)</td> 
+              <td>$(item.nama)</td> 
+            </tr>
+             `;
+          tabel.innerHTML += baris;
+        });
+      }
+      renderTable();
+    </script>
+  </body>
+</html>

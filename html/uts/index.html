@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameStore</title>
+    <link rel="stylesheet" href="/html/uts/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <!-- Kasih search box -->
+      <!-- Navbar Sticky -->
+      <!-- Button 'login' dan 'registrasi' di sisi kanan navbar -->
+      <!-- Tambhkan breadcrumb nbavigation di halaman detail game -->
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">GameStore</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/html/uts/index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                aria-current="page"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Games
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">MOBA Games</a></li>
+                <li><a class="dropdown-item" href="#">Battle Royale</a></li>
+                <li><a class="dropdown-item" href="#">RPG Games</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Promo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tutorial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex me-lg-3 my-2 my-lg-0" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search game..."
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+          <div class="d-flex gap-2 my-2 my-lg-0">
+            <button class="btn btn-outline-light">Login</button>
+            <button class="btn btn-primary">Register</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- <nav aria-label="breadcrumb">
+      <ol class="breadcrumb mb-0">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Games</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          Mobile Legends
+        </li>
+      </ol>
+    </nav> -->
+
+    <!-- Grid -->
+    <section class="hero p-5">
+      <div class="container">
+        <img class="img-fluid mb-3" src="/img/logo.jpg" alt="logo" />
+        <h1 class="display-4 fw-bold">Game Store Sabito</h1>
+        <p class="lead">Game Store yang murah dan terjamin.</p>
+        <a href="/html/uts/topup.html" class="btn btn-primary btn-lg mt-3"
+          >Top Up Sekarang</a
+        >
+      </div>
+    </section>
+
+    <!-- Kasih Button -->
+    <!-- Belum dikasih button -->
+    <div class="container py-5">
+      <div class="row g-4">
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100 text-center shadow-sm">
+            <img
+              class="card-img-top img-fluid p-3"
+              src="/img/mobile-legends.jpg"
+              alt="ml"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mobile Legends</h5>
+              <a href="" class="btn btn-primary btn-sm">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100 text-center shadow-sm">
+            <img
+              class="card-img-top img-fluid p-3"
+              src="/img/free-fire.jpg"
+              alt="ff"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Free Fire</h5>
+              <a href="" class="btn btn-primary btn-sm">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100 text-center shadow-sm">
+            <img
+              class="card-img-top img-fluid p-3"
+              src="/img/pubg-.jpg"
+              alt="pubg"
+            />
+            <div class="card-body">
+              <h5 class="card-title">PUBG Mobile</h5>
+              <a href="" class="btn btn-primary btn-sm">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100 text-center shadow-sm">
+            <img
+              class="card-img-top img-fluid p-3"
+              src="/img/honor-of-kings.png"
+              alt="hok"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Honor Of Kings</h5>
+              <a href="" class="btn btn-primary btn-sm">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100 text-center shadow-sm">
+            <img
+              class="card-img-top img-fluid p-3"
+              src="/img/valorant.jpeg"
+              alt="valo"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Valorant</h5>
+              <a href="" class="btn btn-primary btn-sm">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100 text-center shadow-sm">
+            <img
+              class="card-img-top img-fluid p-3"
+              src="/img/genshin.jpg"
+              alt="genshin"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Genshin Impact</h5>
+              <a href="" class="btn btn-primary btn-sm">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100 text-center shadow-sm">
+            <img
+              class="card-img-top img-fluid p-3"
+              src="/img/wuthering.jpg"
+              alt="ww"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Wuthering Waves</h5>
+              <a href="" class="btn btn-primary btn-sm">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3">
+          <div class="card h-100 text-center shadow-sm">
+            <img
+              class="card-img-top img-fluid p-3"
+              src="/img/cod.jpeg"
+              alt="cod"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Call Of Duty Mobile</h5>
+              <a href="" class="btn btn-primary btn-sm">Lihat Detail</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p class="mb-0">© Contact: 089512060990</p>
+      <p class="mb-0">© Social media: wilmaark</p>
+      <p class="mb-0">© Copyright</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
