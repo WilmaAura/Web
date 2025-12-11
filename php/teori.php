@@ -40,6 +40,10 @@ hitungMundur(5);
 echo strlen ("woii world"). "\n";
 
 //Manipulasi array
-$buah = array("apple", "orange", "Banana", "Mango", "Pineapple");
+$buah = array("apple", "orange", "Banana", "Mango", "Pineapple", "Pawpaw");
+echo count($buah) . "\n";
 
+//Manipulasi tanggal
+echo date ("Y-M-D") . "\n";
+echo date ("y-m-d") . "\n";
 ?>
