@@ -1,8 +1,9 @@
 <?php
+    //Wilma Auraruna Khalif
     $jam = 7.00;
 
     echo "Jam saat ini: $jam.00\n";
-    
+
     if ($jam >= 5.00 && $jam <= 10.59 ){
         echo"Itu pagi bos dari jam (05.00-10.59)\n";
     }else if ($jam >= 11.00 && $jam <= 14.59 ){
