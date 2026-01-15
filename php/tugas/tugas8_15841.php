@@ -14,5 +14,4 @@
     }else if ($jam >= 18.00 && $jam <= 04.59){
         echo "Malem bang saatnya tidur. (18.00 - 04.59)\n";
     }
-
 ?>
